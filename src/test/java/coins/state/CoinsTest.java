@@ -81,7 +81,7 @@ class CoinsTest {
     }
 
     @Test
-    void generateFlipsThrowingExceptionTest() {
+    void generateFlipsThrowExceptionTest() {
         assertThrows(IllegalArgumentException.class, () -> Coins.generateFlips(0, 7));
         assertThrows(IllegalArgumentException.class, () -> Coins.generateFlips(10, 0));
         assertThrows(IllegalArgumentException.class, () -> Coins.generateFlips(4, 5));
